@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>{{ page.title }}</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        {% include assets/css/default.html %}
-        {% include assets/js/default.html %}
-    </head>
-    <body id="{% include page/id %}">
-        {% include header/navigation.html %}
-        <div class="container">
-            {% include header/introduction.html %}
-            <div class="row">
-                <div class="span8">
-                    {% case page.url %}
-                        {% when '/index.html' %}
-                            {% include posts/latest.html %}
-                        {% when '/archive/index.html' %}
-                            {% include posts/archive.html %}
-                        {% else %}
-                            {% include posts/post.html %}
-                    {% endcase %}                                      
-                </div>
-                <div class="span4 sidebar">                    
-                    {% include sidebar/about.html %}
-                    {% include sidebar/recent.html %}
-                    {% include sidebar/repositories.html %}
-                </div>
-            </div>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>{{ site.name }}</title>
+    {% endif %}
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml" />
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="stylesheet" href="/media/css/github.css">
+    <link rel="stylesheet" href="/media/css/fontawesome.css">
+    <script src="/media/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript" src="/media/js/highlight.pack.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
+          </div>
+          <nav>
+            {% for nav in site.navigations %}
+            <span><a title="{{ nav.title }}" href="{{ nav.href }}"><i class="{{ nav.class }}"></i></a></span>
+            {% endfor %}
+          </nav>
+        </header>
+        <div id="content">
+        {{ content }}
         </div>
-    </body>
+        <footer>
+          <div>
+            {% assign first_post = site.posts | last %}
+            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext vi">sext vi</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
 </html>

@@ -1,7 +1,7 @@
 ---
 title: '一月份那'
 layout: post
-guid: urn:uuid:f1f1a21b-a50b-424c-9554-6e6386b6122b
+guid: 2014/01/27/good-habit-should-to-learn.html
 tags:
     - habit
 ---

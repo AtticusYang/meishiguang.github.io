@@ -1,12 +1,12 @@
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-name: "rusty shutter"
+name: "courage future"
 markdown: rdiscount
 
-author: "wayne"
-atom-baseurl: "http://lhzhang.com"
-disqus: "gopherwood"
+author: "yangyt"
+atom-baseurl: "https://meishiguang.github.io"
+disqus: "meishiguang3"
 
 navigations:
   - title: Archive

@@ -1,7 +1,18 @@
-auto: true
-paginate: 1
-markdown: rdiscount
-pygments: true
-permalink: /blog/:title
-rdiscount
-  extensions: [smart]
+# Jekyll
+exclude: nbproject, README.md, manifest.yml, rakefile.rb, Gemfile, Gemfile.lock, update.sh
+permalink:   /:title
+
+safe:        false
+auto:        false
+
+future:      false
+pygments:    true
+markdown:    rdiscount
+
+# Site
+meishiguang:
+    title: 青年人的可爱之处在于勇气，更在于伟大的前程
+
+# Only First P Plugin
+only_first_p:
+    show_read_more_link: false

@@ -3,20 +3,18 @@ title: about
 layout: page
 ---
 
-a
 
-> Minimalist | Appleist | Unixer | Coder
+> to be a full stack software engineer
 
 who involved in 
 
-> [github](https://github.com/waynezhang)
+> [github](https://meishiguang.github.io)
 
 mail 
 
-> echo srvpqxfbyqfvpdtkbjwt | tr yxwvtsrqpkjfdb zuonmlihgeca@.
+> yyt5116#163.com
 
 or follow 
 
-> [@o_lll](https://twitter.com/#!/o_lll)
+> [@douban](http://www.douban.com/people/yytv5/)
 
-to reach me

@@ -42,7 +42,7 @@ hr {
 
 a, header #header h1 a, article .title a, article .meta .tags a, article .divider a {
   text-decoration: none;
-  color: #bb2222; }
+  color: #272121; }
   a:hover, header #header h1 a:hover, article .title a:hover, article .meta .tags a:hover, article .divider a:hover {
     color: #dd1144; }
 

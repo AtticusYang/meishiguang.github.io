@@ -23,7 +23,7 @@
       <div id="main" role="main">
         <header>
           <div id="header">
-            <h1><a title="{{ site.name }}" class="" href="/">{{ site.name }}</a></h1>
+            <h1><a title="{{ site.name }}" class="" href="/archive.html">{{ site.name }}</a></h1>
           </div>
           <nav>
             {% for nav in site.navigations %}
@@ -37,7 +37,7 @@
         <footer>
           <div>
             {% assign first_post = site.posts | last %}
-            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll | themed by <a href="http://lhzhang.com" title="sext vi">sext vi</a> | fork <a href="https://github.com/waynezhang/blog" title="fork me">me</a>
+            &copy; {{ first_post.date | date: "%Y" }} ~ {{ site.time | date: "%Y" }} {{ site.author }} | powered by jekyll | theme from  <a href="http://lhzhang.com" title="sext vi">sext vi</a></a>
           </div>
         </footer>
       </div> <!-- main -->

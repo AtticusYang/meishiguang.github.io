@@ -4,8 +4,7 @@ layout: page
 ---
 
 
-to be a full stack software engineer
-
+青年人的可爱之处在于勇气，更在于伟大的前程。
 
 mail 
 

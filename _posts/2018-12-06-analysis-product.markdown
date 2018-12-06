@@ -1,3 +1,4 @@
+---
 title: '如何做竞品分析' 
 layout: post
 guid: 2018/12/06/analysis-product.html

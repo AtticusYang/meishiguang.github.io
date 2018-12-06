@@ -1,3 +1,4 @@
+---
 title: '数据结构和算法' 
 layout: post
 guid: 2018/12/05/algorithms-datastructure.html
@@ -5,7 +6,6 @@ tags:
     - 数据结构
     - 算法
     - 面试必备
-
 ---
 
 ## 前言
